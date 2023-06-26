@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TranslatorApp</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.2.96/css/materialdesignicons.min.css">
+</head>
+
+<body>
+
+
+
+    <div class="card">
+        <header class="heading">Language Translator</header>
+        <div class="card-body">
+            <div class="row">
+                <div class="selectors">
+                    <div class="">
+                        <select class="custom-select l1"></select>
+                    </div>
+
+                    <span style="font-size: 24px;" class="mdi mdi-swap-horizontal cursor-pointer exg"></span>
+
+                    <div class="">
+                        <select class="custom-select l2"></select>
+                    </div>
+                </div>
+                <div class="col-md-12 d-flex m">
+                    <span class="text-box text-box1">
+                        <div class="">
+                            <textarea class="t1"  rows="8" placeholder="Enter text..."></textarea>
+                            <span onclick="copy(1)" class="mdi mdi-content-copy"></span>
+                            <span onclick="voice(1)" class="mdi mdi-volume-source"></span>
+                        </div>
+                        
+                    </span>
+
+                    <span class="text-box text-box2">
+                        <div class="">
+                            <textarea class="t2" rows="8" placeholder="Translation" readonly disabled></textarea>
+                            <span onclick="copy(2)" class="mdi mdi-content-copy"></span>
+                            <span onclick="voice(2)" class="mdi mdi-volume-source"></span>
+                        </div>
+                    </span>
+                    
+                </div>
+                <div class="last_div">
+                    <div class="error" role="alert"></div>
+                    <button class="translate_btn">Translate</button>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+    <script src="./js/countries.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

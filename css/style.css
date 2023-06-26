@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+     overflow: hidden;
+    background-color:#8ed796d4!important;
+    width: 100vw;
+}
+
+.card{
+    width: 700px;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border-radius: 6px;
+}
+
+.heading {
+    width: 100%;
+    background-color: #28a745;
+    padding: 5px 0px;
+    font-size: 25px;
+    font-family: cursive;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    border-radius: 6px 6px 0px 0px
+}
+
+.selectors{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card-body{
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+
+.last_div{
+    text-align: center;
+    width: 100%;
+}
+.last_div .error{
+    width: 75%;
+    margin: auto;
+    margin-bottom: 5px;
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    padding: 6px 1px;
+    margin-bottom: 5px;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    display: none;
+}
+
+.text-box{
+width: 100%;
+}
+.mdi{
+position: absolute;
+cursor: pointer;
+}
+
+.text-box div{
+    position: relative;
+    margin-bottom: 0;
+}
+.text-box textarea{
+   padding: 5px;
+   width: 100%;
+   outline: none;
+   font-size: 14px;
+}
+.text-box1 .mdi-content-copy{
+   font-size: 18px;
+    bottom: 9px;
+     right: -2px;
+    }
+.text-box1 .mdi-volume-source{
+    font-size: 22px;
+     bottom: 6px;
+      right: 22px;
+    }
+
+.text-box2 .mdi-content-copy{
+    font-size: 18px; 
+    bottom: 9px; 
+    right: -2px;
+    }
+.text-box2 .mdi-volume-source{
+    font-size: 22px; 
+    bottom: 6px;
+     right: 22px;
+    }
+
+    select{
+        display: inline-block;
+        width: 100%;
+        height: calc(2.25rem + 2px);
+        padding: 0.375rem 1.75rem 0.375rem 0.75rem;
+        line-height: 1.5;
+        color: #000000;
+        background-size: 8px 10px;
+        border: none;
+        border-radius: 0.25rem;
+        font-weight: 900;
+        cursor: pointer;
+    }
+    button{
+        color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+    width: 75%;
+
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color .15s ease-in-out,background-color .15s;
+    margin: auto;
+    cursor: pointer;
+    font-weight: 600;
+    }
+
+    
+  
+    @media (max-width:710px) {
+       .card{
+        width: 500px;
+       }
+    }
+    @media (max-width:510px) {
+        .card{
+         width: 400px;
+        }
+     }
+    
